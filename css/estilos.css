@@ -1,0 +1,250 @@
+:root {
+    --color-principal: #a9245a;
+}
+
+.row {
+    width: 100%;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    color: var(--color-principal);
+}
+
+.navbar {
+    background-color: var(--color-principal);
+}
+
+.menu {
+    background-image: none;
+    line-height: 20px;
+}
+
+.menu > i {
+    line-height: 27px;
+}
+
+.carrito {
+    position: relative;
+}
+
+.notificaciones::after {
+    content: "0";
+    position: absolute;
+    font-style: normal;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: .7rem;
+    line-height: .5rem;
+    padding: .2rem;
+    color: #f00;
+}
+
+.item-1 {
+    left: 50%;
+    bottom: auto;
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
+.item-2 {
+    left: 5%;
+    bottom: 30%;
+    background-color: rgba(92, 6, 42, 0.384)
+}
+
+.item-3 {
+    left: 5%;
+    bottom: 30%;
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+.primera-comilla {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 8rem;
+    top: -30%;
+    left: -10%;
+}
+
+.segunda-comilla {
+    font-style: italic;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.carousel-texto > p {
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+.boton-compra {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: .6rem;
+    border-radius: 3px;
+}
+
+.boton-compra:hover {
+    background-color: #0f0f0f;
+}
+
+.precio-coleccion > span:first-child {
+    font-size: 1.1rem;
+}
+
+.precio-coleccion > span:nth-child(2) {
+    margin-left: .7rem;
+    font-size: 1.4rem;
+}
+
+.item-galeria{
+    position: relative;
+    transition: transform ease-in-out 150ms, opacity ease-in-out 150ms;
+}
+
+.item-galeria:hover {
+    opacity: .9;
+    transform: scale(1.011);
+    cursor: pointer;
+}
+
+.item-galeria > span {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+    background-color: #fff;
+    color: var(--color-principal);
+    padding: .5rem .7rem;
+    font-weight: 700;
+}
+
+.contador-descripcion {
+    left: 10%;
+}
+
+.contador-descripcion .contador p {
+    min-width: 4.8rem;
+    min-height: 4.8rem;
+}
+
+.contador-descripcion .contador p > span {
+    display: block;
+}
+
+.tiempo {
+    line-height: 0;
+    font-size: .8rem;
+}
+
+.boton-oferta {
+    background-color: var(--color-principal);
+}
+
+.boton-oferta:hover {
+    background-color: #810d3b;   
+}
+
+.codigo-celular {
+    background-color: var(--color-principal);
+    color: #fff;
+    border: none;
+}
+
+.terminos {
+    color: var(--color-principal);
+}
+
+.terminos:hover {
+    color: #810d3b;
+}
+
+.btn-registrar {
+    background-color: var(--color-principal);
+    color: #fff;
+}
+
+.btn-registrar:hover {
+    background-color: #810d3b;
+    color: #fff;
+}
+
+.footer {
+    color: #bdbdbd;
+}
+
+.footer h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.footer .acerca-de-descripcion {
+    font-size: .9rem;
+}
+
+.footer .acerca-de-iconos p {
+    font-size: .8rem;
+}
+
+.footer .footer-lista li {
+    margin-top: 1rem;
+}
+
+.footer .footer-lista a{
+    text-decoration: none;
+    color: #bdbdbd;
+    font-size: .9rem;
+}
+
+.footer .footer-lista a:hover {
+    color: #dedede;
+}
+
+.footer input[type="submit"] {
+    background-color: var(--color-principal);
+    color: #fff;
+    border: none;
+}
+
+.footer input[type="submit"]:hover {
+    background-color: #8d1445;
+}
+
+.footer-iconos span a {
+    color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .item-1 {
+        transform: translate(-50%);
+    }
+    .item-2 {
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .item-3 {
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .primera-comilla {
+        font-size: 4rem;
+        top: -10%;
+        left: 0%;
+    }
+    .contador-descripcion .contador p {
+        min-width: 3.7rem;
+        min-height: 3.7rem;
+    }
+}
